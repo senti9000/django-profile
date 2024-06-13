@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'livereload',
     'django.contrib.staticfiles',
     'myApp',
 ]
@@ -48,7 +47,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'livereload.middleware.LiveReloadScript'
 ]
 
 ROOT_URLCONF = 'myProject.urls'
@@ -78,9 +76,11 @@ WSGI_APPLICATION = 'myProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'James',
-        'USER': 'James1',
-        'PASSWORD': 'password',
+        'NAME': 'james',
+        'USER': 'james',
+        'PASSWORD': 'passwrd',
+        'HOST': '10.0.0.183',
+        'PORT': '5432',
     }
 }
 
